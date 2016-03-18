@@ -1,5 +1,5 @@
-# imageminwithgulp
-imageminwithgulp
+# gulp Work with imagemin htmlmin cssmin jsmin jshint
+
 
 
 npm install gulp -g
