@@ -8,9 +8,8 @@ git clone https://github.com/kaaann/imageminwithgulp.git
 
 cd imageminwithgulp && npm install
 
-npm run gulp
+#build#
+npm run build
 
-
-
-
-
+#js test#
+npm run build
