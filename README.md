@@ -12,4 +12,4 @@ cd work-with-gulp && npm install
 npm run build
 
 #js test#
-npm run build
+npm test
