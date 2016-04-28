@@ -4,9 +4,9 @@
 
 npm install gulp -g
 
-git clone https://github.com/kaaann/imageminwithgulp.git
+git clone https://github.com/kaaann/work-with-gulp.git
 
-cd imageminwithgulp && npm install
+cd work-with-gulp && npm install
 
 #build#
 npm run build

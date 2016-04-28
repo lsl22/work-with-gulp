@@ -6,6 +6,7 @@ const pngquant = require('imagemin-pngquant');
 const cssmin=require('gulp-uglifycss');
 const uglify = require('gulp-uglify');
 const htmlmin = require('gulp-htmlmin');
+const spriter = require('gulp-css-spriter');
 
 gulp.task('jshint', function () {
     return gulp.src('dev/js/*.js')
@@ -33,6 +34,14 @@ gulp.task('image', () => {
 
 gulp.task('css', () =>{
     gulp.src('dev/css/*.css')
+        .pipe(spriter({
+            // The path and file name of where we will save the sprite sheet
+            'spriteSheet': './dist/images/spritesheet.png',
+            // Because we don't know where you will end up saving the CSS file at this point in the pipe,
+            // we need a litle help identifying where it will be.
+            'pathToSpriteSheetFromCSS': '../images/spritesheet.png'
+            })
+        )
         .pipe(cssmin({
             "maxLineLen": 80,
             "uglyComments":true
